@@ -1,0 +1,18 @@
+<div class="header__container header__container_small">
+  <p-button icon="pi pi-bars" (onClick)="showMobileMenu()"></p-button>
+  <p-sidebar [(visible)]="displayMobileMenu" [baseZIndex]="10000">
+    <ng-template pTemplate="header">Пермь, +7(800)555-35-35</ng-template>
+    <ng-template pTemplate="content">
+      <div class="container__content">
+        <a
+          *ngFor="let item of tabsList"
+          [routerLink]="item.routerLink"
+          class="navigation__item"
+        >
+          {{item.label}}
+        </a>
+      </div>
+    </ng-template>
+    <ng-template pTemplate="footer">Footer Content</ng-template>
+  </p-sidebar>
+</div>

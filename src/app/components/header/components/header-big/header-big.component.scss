@@ -1,0 +1,32 @@
+.header {
+  &__container {
+     display: flex;
+     justify-content: space-between;
+     padding: 3rem 2rem;
+     @media (max-width: 992px) {
+       &_big {
+         display: none;
+       }
+     }
+  }
+}
+
+.header__info {
+  display: flex;
+  gap: 1rem;
+}
+
+.header__navigation {
+  display: flex;
+  gap: 1rem;
+}
+
+.navigation__item {
+  text-decoration: none;
+  color: #000000;
+}
+
+.navigation__item:hover, .header__info:hover {
+  text-decoration: underline;
+  color: #83c37f;
+}

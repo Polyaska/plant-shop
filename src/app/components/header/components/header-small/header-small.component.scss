@@ -1,0 +1,35 @@
+.header {
+  &__container {
+    @media (min-width: 992px) {
+      &_small {
+        display: none;
+      }
+    }
+  }
+}
+
+.header__info {
+  display: flex;
+  gap: 1rem;
+}
+
+.header__navigation {
+  display: flex;
+  gap: 1rem;
+}
+
+.navigation__item {
+  margin-top: 1em;
+  display: block;
+  text-decoration: none;
+  color: #000000;
+}
+
+.navigation__item:hover, .header__info:hover {
+  text-decoration: underline;
+  color: #83c37f;
+}
+
+.container__content {
+
+}
