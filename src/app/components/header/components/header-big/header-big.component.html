@@ -1,0 +1,13 @@
+<div class="header__container header__container_big">
+  <div class="header__info">
+    <span>ПлантШоп</span>
+    <span>Пермь, +88005553535</span>
+  </div>
+  <nav class="header__navigation navigation">
+    <a
+      *ngFor="let item of tabsList"
+      [routerLink]="item.routerLink"
+      class="navigation__item"
+    >{{item.label}}</a>
+  </nav>
+</div>
